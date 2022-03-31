@@ -16,7 +16,6 @@ contract('Voting', function (accounts) {
 
 
     // ::::::::::::: MODIFIERS ONLYOWNER ::::::::::::: //
-
     describe("Testing Modifier OnlyOwner", function () {
 
         before('reuse deployed VotingInstance for OnlyOwner Modifier', async () => {
@@ -73,7 +72,6 @@ contract('Voting', function (accounts) {
     });
 
     // ::::::::::::: REQUIRES ::::::::::::: //
-
     describe("Testing All Requires", function () {
 
         beforeEach('should setup the contract VotingInstance', async () => {
@@ -148,7 +146,6 @@ contract('Voting', function (accounts) {
     });
 
     // ::::::::::::: EVENTS ::::::::::::: //
-
     describe("Testing Common Events submission", function () {
 
         beforeEach('should setup the contract VotingInstance for testing events submission', async () => {
@@ -203,10 +200,9 @@ contract('Voting', function (accounts) {
         });
     });
 
-    // ::::::::::::: FUNCTION BEHAVIOR ::::::::::::: //
+    // ::::::::::::: FUNCTIONS BEHAVIOR ::::::::::::: //
 
     // ::::::::::::: REGISTRATION ::::::::::::: //
-
     describe("Testing Registering Voter", function () {
 
         it('should register a voter', async () =>{
@@ -219,7 +215,6 @@ contract('Voting', function (accounts) {
     });
 
     // ::::::::::::: PROPOSAL ::::::::::::: //
-
     describe("Testing Registering Proposals", function () {
 
         beforeEach('should setup the contract VotingInstance', async () => {
@@ -245,7 +240,6 @@ contract('Voting', function (accounts) {
     });
 
     // ::::::::::::: VOTE ::::::::::::: //
-
     describe("Testing Vote", function () {
 
         beforeEach('should setup the contract VotingInstance', async () => {
@@ -279,7 +273,6 @@ contract('Voting', function (accounts) {
         });
 
     });
-
 
     // ::::::::::::: STATE ::::::::::::: //
 

@@ -34,7 +34,7 @@ All functions are covered with 42 passing tests.
 * should emit a Voted event (750ms)
 ### Testing State Events submission
 * should emit a WorkflowStatus event for starting proposal registering (113ms)
-* should emit✓ a WorkflowStatus event for ending proposal registering (99ms)
+* should emit a WorkflowStatus event for ending proposal registering (99ms)
 * should emit a WorkflowStatus event for starting voting session (109ms)
 * should emit a WorkflowStatus event for ending voting session (120ms)
 * should emit a WorkflowStatus event for ending voting session (121ms)
