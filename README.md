@@ -1,6 +1,7 @@
 
 ## Testing Contract: Voting
 
+All functions are covered with 42 passing tests.
 
 ### Testing Modifier OnlyOwner
 * onlyOwner should be able to addvoter (474ms)
