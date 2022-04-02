@@ -1,7 +1,15 @@
 
 ## Testing Contract: Voting
 
-All functions are covered with 42 passing tests.
+All functions are covered with <span style="color: green"> 41 passing tests </span> and <span style="color: red"> 1 not passing test </span>.
+
+Tests are grouped with the following rules :
+
+1.Modifiers
+
+2.Requires
+
+3.Function Behavior
 
 ### Testing Modifier OnlyOwner
 * onlyOwner should be able to addvoter (474ms)
@@ -22,7 +30,7 @@ All functions are covered with 42 passing tests.
 * voter should NOT add empty proposal (651ms)
 * voter should vote only during VotingSession state (274ms)
 * voter should vote only once (1331ms)
-* voter should vote for an existing proposal (901ms)
+* <span style="color: red"> voter should vote for an existing proposal </span> 
 * proposal registration should start after registering voters (298ms)
 * end of proposal registration should start after registering proposals (173ms)
 * voting session should start after end of registering proposals (86ms)
@@ -55,6 +63,3 @@ All functions are covered with 42 passing tests.
 * should change to VotingSessionEnded status (195ms)
 ### Testing tally votes
 * should tallyVotes (1827ms)
-
-
-42 passing (21s)

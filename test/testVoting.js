@@ -11,7 +11,7 @@ contract('Voting', function (accounts) {
     const emptyProposal = "";
     const idProposal = new BN(0);
     const secondProposal = "MySecondProposal";
-    const secondIdProposal = 1;
+    const secondIdProposal = new BN(1);
     let VotingInstance;
 
 
@@ -119,7 +119,7 @@ contract('Voting', function (accounts) {
             await VotingInstance.startProposalsRegistering({'from': owner});
             await VotingInstance.endProposalsRegistering({'from': owner});
             await VotingInstance.startVotingSession({'from': owner});
-            await expectRevert(VotingInstance.setVote(1, {'from': voter1}), "Proposal not found");
+            await expectRevert(VotingInstance.setVote(idProposal, {'from': voter1}), "Proposal not found");
         });
 
         it('proposal registration should start after registering voters', async () =>{
@@ -312,7 +312,7 @@ contract('Voting', function (accounts) {
         });
     });
 
-    describe("Testing tally votes", function () {
+    describe("Testing Tally Votes", function () {
 
         before('should setup the contract VotingInstance', async () => {
             VotingInstance = await Voting.new({'from': owner});
